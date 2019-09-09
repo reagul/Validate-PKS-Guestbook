@@ -5,7 +5,7 @@ Static HTML website hosting the content for the Containers as a Service Workshop
 
 # Dynamic Persistent Volumes with vSAN
 *Create a Storage Class (SC) for vsphere storage provider: kubectl apply -f vsphere-sc.yml
-**Create Persistent Volume Claim (PVC) for redis master: kubectl apply -f redis-master-claim.yml
+*Create Persistent Volume Claim (PVC) for redis master: kubectl apply -f redis-master-claim.yml
 * Create PVC for redis slave: kubectl apply -f redis-slave-claim.yml
 *Show PVC, Persistent Volume (PV), SC: kubectl get pvc,pv,sc --namespace=workshop
 *Show redis pods running and wait for them to load: kubectl get po -n workshop -w
